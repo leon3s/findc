@@ -7,7 +7,7 @@ char	is_c(char *str)
 	count = -1;
 	while (str[++count])
 	{
-		if (str[count] == '.' && str[count + 1] == 'c')
+		if (str[count] == '.' && str[count + 1] == 'c' && !str[count + 2])
 			return (1);
 	}
 	return (0);
